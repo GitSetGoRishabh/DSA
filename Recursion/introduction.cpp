@@ -28,4 +28,3 @@ int basePrinter(){
 int main(){
     basePrinter();
 }
-
