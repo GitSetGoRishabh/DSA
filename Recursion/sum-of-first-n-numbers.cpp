@@ -1,17 +1,18 @@
+// parameterised recursion
+
 #include<bits/stdc++.h>
 using namespace std;
 
-int sum=0;
-int i=1;
-int sumOfNumbers(int i,int num){
-    if(i>num) return 0;
-    sum=sum+i;
-    i++;
-    sumOfNumbers(i,num);
-    return sum;
+int sumOfNumbers(int i,int sum){
+    if(i<1){
+        cout<<sum;
+        return 0;
+    }
+    sumOfNumbers(i-1,sum+i);
+    return 0;
 }
 
 int main(){
-    sumOfNumbers(i,10);
+    sumOfNumbers(10,0);
     return 0;
 }
