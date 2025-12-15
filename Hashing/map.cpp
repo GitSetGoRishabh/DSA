@@ -25,3 +25,6 @@ int main(){
         cout<<mpp[number]<<endl;
     }
 }
+
+// map has log n tc for each case
+// whereas unordered map has o(1) for all case except for worst case o(n)
