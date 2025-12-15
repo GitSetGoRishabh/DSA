@@ -12,11 +12,12 @@ int main(){
     }
 
     //precomputing
-    int hash[13];
+    int hash[13]={0};
     for(int i=0;i<n;i++){
-        hash[arr[i]] +=1;
+        hash[arr[i]] += 1;
     }
 
+    //fetch
     int number;
     cin>>number;
     cout<<hash[number];
