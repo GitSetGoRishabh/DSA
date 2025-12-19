@@ -14,6 +14,9 @@ int main(){
 
     for(int i=0;i<n;i++){
         cout<<arr[i];
-        
+
     }
 }
+
+//time complexity= o(n^2) - worst , o(n^2) - best , o(n^2) - avg 
+//space complexity= o(n)
