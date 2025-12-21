@@ -2,13 +2,13 @@
 using namespace std;
 
 
-void selectionSort(int arr[],int n){
-    for(int i=0;i<=n-2;i++){
-        int min=i;
-        for(int j=i;j<=n-1;j++){
-            if(arr[j]<arr[min]) min=j;
+void insertionSort(int arr[],int n){
+    for(int i=1;i<=n-1;i++){
+        for(int j=i;j>0;j--){
+            if(arr[j]<arr[j-1]) swap(arr[j],arr[j-1]);
+            else break;
         }
-        swap(arr[min],arr[i]);
+        
     }
 }
 
@@ -19,7 +19,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    selectionSort(arr,n);
+    insertionSort(arr,n);
     for(int i=0;i<n;i++){
         cout<<arr[i];
     }
