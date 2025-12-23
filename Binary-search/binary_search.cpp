@@ -11,7 +11,7 @@ int main(){
     int mid;
 
     while(start<=end){
-        mid=(start+end)/2;
+        mid=start+(end-start)/2;
         if(arr[mid]==key){
             cout<<"Found at index "<<mid;
             break;
