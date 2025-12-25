@@ -10,7 +10,7 @@ int main(){
     int mid;
 
     while(start<=end){
-        mid=start+(end-start)/2;
+        mid=end+(start-end)/2;
         if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]) {
             break;
         }
