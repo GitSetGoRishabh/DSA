@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n=6;
+    int arr[6]={7,1,5,3,6,4};
+    int mini=arr[0];
+    int maxProfit=0;
+    for(int i=0;i<n;i++){
+        int cost=arr[i]-mini;
+        maxProfit=max(maxProfit,cost);
+        mini=min(mini,arr[i]);
+    }
+    cout<<maxProfit;
+}
