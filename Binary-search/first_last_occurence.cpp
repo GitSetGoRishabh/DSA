@@ -5,7 +5,7 @@ int main(){
 
     int n=7;
     int arr[7]={1,3,3,4,6,7,7};
-    int key=7;
+    int key=3;
     int start=0;
     int end=n-1;
     int mid;
