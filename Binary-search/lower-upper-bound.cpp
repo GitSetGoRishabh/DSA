@@ -23,6 +23,7 @@ int main(){
         }
     }
     cout<<arr[ans]<<endl;
+    
     ans=-1;
     low=0;
     high=5;
