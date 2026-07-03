@@ -35,6 +35,7 @@ node* deleteTail(node* head){
         temp=temp=temp->next;
     }
     free(temp->next);
+    temp->next=nullptr;
     return head;
 }
 
