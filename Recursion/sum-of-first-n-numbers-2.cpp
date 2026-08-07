@@ -7,7 +7,6 @@ int sumOfNumbers(int num){
     if(num==0){
         return 0;
     }
-
     return num+sumOfNumbers(num-1);
 }
 int main(){
