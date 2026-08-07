@@ -6,7 +6,6 @@ void printNum(int num){
     cout<<num<<endl;
     num--;
     printNum(num);
-
 }
 
 int main(){
