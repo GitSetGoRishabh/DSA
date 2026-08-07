@@ -1,11 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int printName(int i,int num){
+int i=1;
+int printName(int num){
     if(i>num) return 0;
     cout<<"Rishabh"<<endl;
     i++;
-    printName(i,num);
+    printName(num);
 
     return 0;
 }
@@ -13,8 +13,8 @@ int printName(int i,int num){
 int main(){
     int num;
     cin>>num;
-    int i=1;
-    printName(i,num);
+    
+    printName(num);
 
     return 0;
 }
