@@ -8,7 +8,8 @@ int checkPallindrome(string s,int i){
     }
     return checkPallindrome(s,i+1);
 }
+
 int main(){
-    string s="jatin";
+    string s="nitin";
     cout<<checkPallindrome(s,0);
 }
