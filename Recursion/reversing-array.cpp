@@ -4,7 +4,6 @@ int reverseArray(int arr[],int i,int n){
     if(i>=n){
         return 0;
     }
-
     swap(arr[i],arr[n]);
     return reverseArray(arr,i+1,n-1);
 }
